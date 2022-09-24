@@ -1,109 +1,100 @@
-html {
+html {}
 
-}
-
-* {
+/* * {
     box-sizing: border-box;
-  }
-  
-  body {
-    /* font: 16px Arial;   */
-  }
-  
-  /*the container must be positioned relative:*/
-  .autocomplete {
+  } */
+
+body {}
+
+/*the container must be positioned relative:*/
+.autocomplete {
     margin: auto;
     display: block;
     padding: 10px;
-  }
-  
-  input {
+}
+
+input {
     border: 1px solid transparent;
     background-color: #f1f1f1;
     padding: 10px;
     font-size: 16px;
-  }
-  
-  input[type=text] {
+}
+
+input[type=text] {
     background-color: #E0E7EB;
     width: 100%;
-  }
-  
-  input[type=submit] {
-    background-color: DodgerBlue;
-    color: #fff;
-    cursor: pointer;
-  }
-  
-  .autocomplete-items {
-    position: absolute;
+}
+
+.autocomplete-items {
+    /* position: absolute; */
     border: 1px solid #d4d4d4;
     border-bottom: none;
     border-top: none;
-    z-index: 99;
-    /*position the autocomplete items to be the same width as the container:*/
+    z-index: 9999;
+    /* position the autocomplete items to be the same width as the container:  */
     top: 100%;
     left: 0;
     right: 0;
-  }
-  
-  .autocomplete-items div {
+}
+
+.autocomplete-items div {
     padding: 10px;
     cursor: pointer;
-    background-color: #fff; 
-    border-bottom: 1px solid #d4d4d4; 
-  }
-  
-  /*when hovering an item:*/
-  .autocomplete-items div:hover {
-    background-color: #e9e9e9; 
-  }
-  
-  /*when navigating through the items using the arrow keys:*/
-  .autocomplete-active {
-    background-color: DodgerBlue !important; 
-    color: #ffffff; 
-  }
+    background-color: #fff;
+    border-bottom: 1px solid #d4d4d4;
+}
 
-  span {cursor:pointer; }
-  .number{
+/*when hovering an item:*/
+.autocomplete-items div:hover {
+    background-color: #e9e9e9;
+}
 
-  }
-  .minus, .plus{
-      width:20px;
-      /* height:20px; */
-      background:#f2f2f2;
-      border-radius:4px;
-      padding:8px 5px 8px 5px;
-      border:1px solid #ddd;
+/*when navigating through the items using the arrow keys:*/
+.autocomplete-active {
+    background-color: DodgerBlue !important;
+    color: #ffffff;
+}
+
+span {
+    cursor: pointer;
+}
+
+.number {}
+
+.minus,
+.plus {
+    width: 20px;
+    background: #f2f2f2;
+    border-radius: 4px;
+    padding: 8px 5px 8px 5px;
+    border: 1px solid #ddd;
     display: inline-block;
     vertical-align: middle;
     text-align: center;
     background: none;
     border: none;
-  }
-  input{
-      height:34px;
-width: 100px;
-text-align: center;
-/* font-size: 26px; */
-      border:1px solid #ddd;
-      border-radius:4px;
-display: inline-block;
-vertical-align: middle;
-  }
+}
 
-  #product-count{
+input {
+    height: 34px;
+    width: 100px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#product-count {
     width: 50px;
     background: none;
     border: none;
-  }
+}
 
-  .add-to-cart{
+.add-to-cart {
     background-color: #E0E7EB;
     border: none;
     color: #04AA6D;
-    /* padding: 20px; */
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -113,13 +104,12 @@ vertical-align: middle;
     border-radius: 12px;
     width: 100px;
     height: 29px;
-  }
+}
 
-  .cancel-add-to-cart{
+.cancel-add-to-cart {
     background-color: #E0E7EB;
     border: none;
     color: #EE5237;
-    /* padding: 20px; */
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -130,33 +120,37 @@ vertical-align: middle;
     width: 100px;
     height: 29px;
     margin-right: 50px;
-  }
+}
 
-  .list-group{
+.list-group {
     max-height: 470px;
     margin-bottom: 10px;
     overflow: scroll;
-  }
-  .add-to-cart-label , .detail-list-label{
+}
+
+.add-to-cart-label,
+.detail-list-label {
     text-align-last: center;
     font-size: 18px;
     font-weight: bold;
-  }
+}
 
-  .approve-cancel-btn-group{
+.approve-cancel-btn-group {
     position: fixed;
     bottom: 10px;
     right: 12%;
-  }
+    z-index: -1;
+}
 
-  .product-name{
-float: right;
-  }
+.product-name {
+    float: right;
+    max-width: 75%;
+}
 
-  .quantity{
+.quantity {
     float: left;
-    background:#45B6F9;
-    border-radius:50%;
+    background: #45B6F9;
+    border-radius: 50%;
     height: 26px;
     width: 26px;
     line-height: 26px;
@@ -164,10 +158,10 @@ float: right;
     text-align: center;
     margin-right: 6px;
     font-weight: 700;
-  }
+}
 
 
-  .approve-send{
+.approve-send {
     background-color: #E0E7EB;
     border: none;
     color: #04AA6D;
@@ -181,9 +175,9 @@ float: right;
     border-radius: 12px;
     width: 100px;
     height: 46px;
-  }
+}
 
-  .clear-all{
+.clear-all {
     background-color: #E0E7EB;
     border: none;
     color: #EE5237;
@@ -197,13 +191,13 @@ float: right;
     width: 100px;
     height: 46px;
     margin-right: 50px;
-  }
+}
 
-  hr.solid {
+hr.solid {
     border-top: 2px solid #bbb;
-  }
+}
 
-  .remove-product{
+.remove {
     float: left;
     /* background: #EE0202; */
     border-radius: 50%;
@@ -214,10 +208,10 @@ float: right;
     text-align: center;
     margin-right: 6px;
     font-weight: 700;
-    line-height:inherit!important;
-  }
+    line-height: inherit !important;
+}
 
-  hr{
+hr {
     width: 90%;
     margin: auto;
-  }
+}
